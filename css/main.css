@@ -2,6 +2,7 @@
 
 * {
     outline: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,9 +23,13 @@ p {
     background: #000 !important;
     transition: 0.5s;
 }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #000;
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link:hover {
+    color: #000 !important;
     background: #fff;
+}
+.navbar-light .navbar-nav .active>.nav-link:hover {
+    color: #000;
 }
 .navbar-light .navbar-nav .nav-link {
     color: rgba(255, 255, 255, .8);
@@ -42,4 +47,226 @@ p {
     color: rgba(255, 255, 255, 1);
     font-size: 2.5rem;
     font-weight: 600;
+}
+
+
+.banner {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(/img/ban2.jpg);
+    background-size: cover;
+    margin-bottom: 0;
+}
+.height100p {
+    height: 100vh;
+}
+.h100 {
+    height: 100%;
+}
+.contentBox {
+    position: relative;
+    top: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+.contentBox h1 {
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+.contentBox p {
+    font-weight: 700;
+    color: rgb(252, 248, 248);
+}
+
+
+.sec1 {
+    padding: 100px 0;
+    height: 100vh;
+}
+.headerText h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+.placeBox {
+    position: relative;
+    max-width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.placeBox .imgBx {
+    width: 100%;
+    height: 100%;
+}
+.placeBox .imgBx img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.placeBox .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-end;
+}
+.placeBox .content h3 {
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, .75);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.placeBox .content h3 span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sec2 {
+    position: relative;
+    background: url(/img/ban1.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.sec2 h2 {
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+}
+.sec2 .contentAdventure {
+    margin-bottom: 40px;
+    position: relative;
+    display: block;
+    height: auto;
+    top: 70%;   
+}
+.contentAdventure .btnD1 {
+    margin-top: 15px;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+
+.blog {
+    position: relative;
+    padding: 100px 0;
+}
+/* .blog .text-center {
+    padding-bottom: 30px;
+} */
+.headerText h2 {
+    font-size: 3.5rem;
+}
+
+.blogPost {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 30px; 
+    background: #000;
+}
+.blogPost .imgBx {
+    height: 400px;
+}
+.blogPost > .imgBx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blogPost .content {
+    position: relative;
+    color: #fff;
+    background: #000;
+    padding: 15px;
+}
+.blogPost .content h1 {
+    margin: 0;
+    padding: 0 0 10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.blogPost .content p {
+    padding: 0;
+    font-weight: 500;
+}
+.btnD2 {
+    border-radius: 30px;
+    float: right;
+    padding: 10px 20px; 
+}
+
+
+
+.contact {
+    position: relative;
+    padding: 100px 0;
+}
+.contact .form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(112, 107, 107, 0.616);
+    height: 50px;
+    border-radius: 0;
+    background: rgba(226, 225, 225, 0.356);
+    font-size: 1.25rem;
+}
+.contact .form-control:focus,
+.contact .form-control:hover {
+    border: none;
+    box-shadow: none;
+}
+.contact .textarea {
+    min-height: 100px;
+}
+.contact label {
+    font-size: 1.25rem;
+}
+.contact button {
+    padding: 10px 30px;
+    border-radius: 25px;
+}
+
+
+.sci {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sci li {
+    list-style: none;
+    margin: 10px 20px;
+}
+.sci li a {
+    color: #7a7e85;
+    font-size: 2em;
+    transition: 0.5s;
+}
+.sci li a:hover {
+    color: #007BFF;
+}
+
+
+.cpryt {
+    text-align: center;
+    margin-top: 20px;
 }
