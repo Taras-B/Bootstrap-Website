@@ -268,3 +268,45 @@ p {
     text-align: center;
     margin-top: 20px;
 }
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+}
+
+@media (max-width: 992px) {
+     .navbar-light .navbar-toggler {
+         background: #fff;
+     }
+    .sec1 {
+        margin-bottom: 100px;
+        margin-top: 0;
+        height: 100%;
+    }
+    .sec1 h2 {
+        font-size: 2.5rem;
+    }
+    .sec2 {
+        min-height: 100%;
+    }
+    .contentBox h1,
+    .sec2 h2 {
+        font-size: 2.5rem;
+    }
+    .sec2 .contentAdventure p {
+        font-size: 1rem;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .contact {
+        padding: 0;
+    }
+    .cpryt {
+        margin-top: 0;
+    }
+}
