@@ -57,6 +57,7 @@ p {
     height: 100vh;
     background: url(../img/ban2.jpg);
     background-size: cover;
+    background-position: center;
     margin-bottom: 0;
 }
 .height100p {
@@ -143,6 +144,7 @@ p {
     position: relative;
     background: url(../img/ban1.jpg);
     background-size: cover;
+    background-position: center;
     height: 100vh;
 }
 .sec2 h2 {
@@ -275,6 +277,7 @@ p {
         padding-left: 1rem;
     }
 
+
 }
 
 @media (max-width: 992px) {
@@ -295,6 +298,9 @@ p {
     .contentBox h1,
     .sec2 h2 {
         font-size: 2.5rem;
+    }
+    .sec2 .contentAdventure {
+        top: 50%;
     }
     .sec2 .contentAdventure p {
         font-size: 1rem;
